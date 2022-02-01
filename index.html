@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Cafe Pos System</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!--전체화면-->
+  <div id ="maindisplay">
+    <!--메뉴-->
+    <div id="menubackground" class="left">
+      <div id="store">Cafe Saturday!
+        <button id="refresh"><img id ="reficon" src="https://img.icons8.com/wired/50/000000/refresh.png"></button>
+      </div>
+
+      <!--메뉴상세-->
+    <div class="onlycoffee">
+      <div class="type">Coffee</div>
+    </div>
+    <div class="noncoffee">
+      <div class="type">Beverage</div>
+    </div>
+    <div class="bakery">
+      <div class="type">Bakery</div>
+    </div>
+    </div>
+    <!--상품내역-->
+    <div id="orderlist" class="right">
+      <table>
+        <thead>
+            <tr>
+                <th>상품명</th>
+                <th>수량</th>
+                <th>가격</th>
+            </tr>
+        </thead>
+        <tbody>      
+        </tbody>
+    </table>
+    </div>
+    
+     <!--총액-->
+     <div id="total" class="right">
+      <div class="money"><span>받을 금액:</span><span class ='won'>원</span><span id="bill">0</span></div>
+      <div class="money"><span>받은 금액:</span><span class ='won'>원</span><span id="paid">0</span></div>
+      <div class="money"><span>거스름돈:</span><span class ='won'>원</span><span id="change">0</span></div>
+     </div>
+    
+    <!--계산기-->
+    <div id="calc" class="right">
+      <div class="calcbutton">
+      <button class="button" value="7">7</button>
+      <button class="button" value="8">8</button>
+      <button class="button" value="9">9</button>
+      <button class="button" value="4">4</button>
+      <button class="button" value="5">5</button>
+      <button class="button" value="6">6</button>
+      <button class="button" value="1">1</button>
+      <button class="button" value="2">2</button>
+      <button class="button" value="3">3</button>
+      <button class="button" value="0">0</button>
+      <button class="button" value="00">00</button>
+      <button class="button enter">입력</button>
+      </div>
+    </div>
+    
+    <!--결제-->
+    <div id="pay" class="right">
+      <button class="paybutton">
+        <img src="https://img.icons8.com/ios/30/000000/bank-card-back-side.png">카드</button>
+      <button class="paybutton">
+        <img src="https://img.icons8.com/pastel-glyph/30/000000/dollar-coin.png">현금</button>
+    </div>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="logic.js"></script>
+</body>
+</html>
